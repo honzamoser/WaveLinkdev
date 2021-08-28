@@ -1,4 +1,3 @@
-### Hello! Im Wavelink
+### About me
 
-I code mainly in c# and JS/TS.
-I like making games and websites
+I am retarded.
