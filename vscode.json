@@ -1,31 +1,17 @@
 {
-  ///This the configuration file I use for visual studio code.
-  ///The font i use is from randy.gg for a subscription, for an alternative i recomendd 'Fira Code'
-  ///with font ligatures enabled. I have also cleared the cSpell dictionary, so fill that up with words that you want
-  ///cSpell to understand like "Youtube" etc..
-  //The theme is Monkai Dimmed btw
-  
-  //Telemetery
+    //TELEMETRY
     "redhat.telemetry.enabled": false,
-    "telemetry.enableTelemetry": false,
-    "nxConsole.enableTelemetry": false,
+    "telemetry.telemetryLevel": "off",
 
-    //Language Setup
+    //LANGUAGE SUPPORT
     "[html]": {
-        "editor.defaultFormatter": "vscode.html-language-features"
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[json]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
-    },
-    "[dart]": {
-        "editor.formatOnSave": true,
-        "editor.formatOnType": true,
-        "editor.rulers": [80],
-        "editor.selectionHighlight": false,
-        "editor.suggest.snippetsPreventQuickSuggestions": false,
-        "editor.suggestSelection": "first",
-        "editor.tabCompletion": "onlySnippets",
-        "editor.wordBasedSuggestions": false
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -40,7 +26,34 @@
         "editor.defaultFormatter": "ms-dotnettools.csharp"
     },
 
-    //Editor Config
+    //GIT
+    "git.enableSmartCommit": true,
+    "git.autofetch": true,
+    "git.enableCommitSigning": true,
+    "git.confirmSync": false,
+    "merge-conflict.autoNavigateNextConflict.enabled": true,
+
+    //POWERMODE
+    "powermode.enabled": true,
+    "powermode.presets": "particles",
+    "powermode.enableShake": false,
+
+    //SPELL
+    "cSpell.userWords": [
+        "Behaviour",
+        "Bruh",
+        "FOSS",
+        "MONGODB",
+        "Spotify",
+        "Wavelink",
+        "Websockets",
+        "Youtube"
+    ],
+    "workbench.iconTheme": "vscode-icons",
+    "editor.cursorStyle": "underline",
+    "prettier.tabWidth": 4,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "workbench.sideBar.location": "right",
     "files.exclude": {
         "**/*.asset": true,
         "**/*.blend+": true,
@@ -52,56 +65,27 @@
         "react-app-env.d.ts": true
     },
     "editor.formatOnPaste": true,
-    "editor.fontLigatures": true,
     "editor.renderWhitespace": "none",
     "editor.inlineSuggest.enabled": true,
     "editor.suggestSelection": "first",
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
 
-    //Debugging
-    "debug.onTaskErrors": "debugAnyway",
+    //FONT
+    "editor.fontFamily": "Jetbrains Mono",
+    "editor.fontSize": 14,
+    "editor.fontLigatures": true,
 
-    //Extenstions Config
-    "github.copilot.enable": {
-        "*": true,
-        "yaml": true,
-        "plaintext": false,
-        "markdown": false
-    },
-    "git.enableSmartCommit": true,
-    "git.autofetch": true,
-    "gitlens.views.branches.branches.layout": "list",
-    "liveServer.settings.donotShowInfoMsg": true,
-    "typescript.tsserver.log": "off",
-    "typescript.updateImportsOnFileMove.enabled": "always",
-    "tabnine.experimentalAutoImports": true,
-    "prettier.tabWidth": 4,
-    "liveServer.settings.donotVerifyTags": true,
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "dart.flutterSdkPath": "E:\\Flutter",
-    "C_Cpp.updateChannel": "Insiders",
-
-    //Decoration
-    "workbench.colorTheme": "Monokai Dimmed",
-    "workbench.iconTheme": "material-icon-theme",
-    "editor.fontFamily": "RandyGG",
-    "debug.console.fontFamily": "RandyGG",
-    "workbench.sideBar.location": "right",
-    "diffEditor.codeLens": true,
-    "merge-conflict.autoNavigateNextConflict.enabled": true,
-    
-    //Terminal
+    //TERMINAL
     "terminal.integrated.tabs.enabled": true,
-    "terminal.integrated.fontFamily": "",
+    "terminal.integrated.fontFamily": "MesloLGM NF",
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "terminal.integrated.detectLocale": "auto",
+    "terminal.integrated.cursorStyle": "underline",
+    "terminal.integrated.cursorBlinking": true,
 
-    // - Powermode
-    "powermode.enabled": true,
-    "powermode.presets": "particles",
-    "powermode.enableShake": false,
-
-    //Dictionary
-    "cSpell.userWords": [
-
-    ]
+    //POPUPS
+    "vsicons.dontShowNewVersionMessage": true,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "workbench.startupEditor": "none"
 }
