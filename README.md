@@ -1,3 +1,3 @@
 ### About me
 
-I am retarded.
+A self-taught developer and student from the Czech Republic.
